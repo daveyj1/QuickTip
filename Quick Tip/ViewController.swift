@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
         let defaults = UserDefaults.standard
         let percentage = defaults.float(forKey: "percent")
